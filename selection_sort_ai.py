@@ -18,8 +18,8 @@ def find_smallest_element_index(array):
 
 #arr = [5, 3, 6, 2, 10]
 #generate random array with 1 million elements
-arr = [random.randint(0, 20000) for _ in range(20000)]
-print(selection_sort(arr)) 
+#arr = [random.randint(0, 20000) for _ in range(20000)]
+#print(selection_sort(arr)) 
 
 #write test case for selection sort
 def test_selection_sort():
@@ -32,3 +32,7 @@ def test_selection_sort():
     assert selection_sort([1, 2, 3, 4, 5]) == [1, 2, 3, 4, 5]
 
     print("All test cases passed!")     
+
+
+test_selection_sort()
+

@@ -10,5 +10,5 @@ def quick_sort(arr):
         return quick_sort(less) + [pivot] + quick_sort(greater)
     
 #print(quick_sort([10, 5, 2, 3]))
-arr = [random.randint(0, 1000) for _ in range(1000)]
+arr = [random.randint(0, 20000) for _ in range(10000)]
 print(quick_sort(arr))

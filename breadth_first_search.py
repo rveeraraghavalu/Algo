@@ -11,6 +11,7 @@ def bfs(name):
     searched = set()
     while search_queue:
         person = search_queue.popleft()
+        print("current person: " + person)
         if person not in searched:
             if works_in_abc(person):
                 print(person + " works in ABC")
@@ -18,6 +19,8 @@ def bfs(name):
             else:
                 search_queue += graph[person]
                 searched.add(person)
+        else:
+            print(person + " already searched")
     return False
 
 
@@ -35,3 +38,4 @@ graph["friendofKamran"] = []
 
 
 bfs("me")
+
